@@ -82,9 +82,10 @@ $(function(){
 				    		$(".tishi .close").click(function(){
 				    			$('.tishi').addClass("hide");
 								//yaoFun();
-								//kaiyao.addEven();
+								kaiyao.addEven();
+
+
 				    		});
-							kaiyao.addEven();
 				    	},500);
 				    })
 				}else if(ARR.length==2){
