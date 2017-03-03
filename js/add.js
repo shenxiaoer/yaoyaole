@@ -81,9 +81,9 @@ $(function(){
 				    		$('.tishi').removeClass("hide");
 				    		$(".tishi .close").click(function(){
 				    			$('.tishi').addClass("hide");
+								//yaoFun();
+								kaiyao.addEven();
 				    		});
-				    		//yaoFun();
-				    		kaiyao.addEven();
 				    	},500);
 				    })
 				}else if(ARR.length==2){
