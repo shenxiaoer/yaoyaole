@@ -75,34 +75,36 @@ $(function(){
 				ARR.push(num+num1+num2);
 				var kaiyao=new huangFun();
 				if(ARR.length==1){
-					$('.win .close').click(function(){
+					$('.win .close').on("click",function(){
 			    		$(".win").addClass("hide");
 			    		setTimeout(function(){
 				    		$('.tishi').removeClass("hide");
 				    		$(".tishi .close").click(function(){
 				    			$('.tishi').addClass("hide");
-								//yaoFun();
-								kaiyao.addEven();
+								yaoFun();
+								//kaiyao.addEven();
 				    		});
 				    	},500);
 				    })
 				}else if(ARR.length==2){
-					$(".win").addClass("hide");
-					setTimeout(function(){
-						kaiyao.removeEven();
-				    	$('.win_box').removeClass("hide");
-				    	if(ARR[0]-ARR[1]>0){
-				    		$("#win_tipcon").html("第一位赢啦");
-				    	}else if(ARR[0]-ARR[1]==0){
-				    		$("#win_tipcon").html("平局");
-				    	}else{
-				    		$("#win_tipcon").html("第二位赢啦");
-				    	}
-				    	$(".win_box .close").click(function(){
-				    		$('.win_box').addClass("hide");
-				    		location.reload();
-				    	});
-				    },500);
+					$('.win .close').off("click").on("click",function(){
+			    		$(".win").addClass("hide");
+			    		setTimeout(function(){
+							kaiyao.removeEven();
+					    	$('.win_box').removeClass("hide");
+					    	if(ARR[0]-ARR[1]>0){
+					    		$("#win_tipcon").html("第一位赢啦");
+					    	}else if(ARR[0]-ARR[1]==0){
+					    		$("#win_tipcon").html("平局");
+					    	}else{
+					    		$("#win_tipcon").html("第二位赢啦");
+					    	}
+					    	$(".win_box .close").click(function(){
+					    		$('.win_box').addClass("hide");
+					    		location.reload();
+					    	});
+					    },500);
+				    })
 				}
 			},300);
 			
