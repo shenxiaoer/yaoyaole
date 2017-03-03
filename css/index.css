@@ -1,0 +1,47 @@
+*{margin: 0;padding: 0;}
+body,html{background: #003c00;width: 100%;height: 100%;overflow-y: visible;}
+.container{position: relative;width: 100%;}
+.header{width: 100%;height: 145px;background: url(../img/header_bg.png) no-repeat center;background-size: 70%;}
+.left_img{width: 60px;height: 80px;position: absolute;top: 5px;left: 5px;background: #00071e;border-radius: 5px;}
+.header p{color: #fff;text-align: center;height:10px;line-height: 10px;font-size: 8px;}
+.right_img{width: 60px;height: 80px;position: absolute;bottom: 5px;right: 5px;background: #00071e;border-radius: 5px;}
+.header img{width: 50px;height: 50px;margin:5px;}
+.center{background: url(../img/bg.jpg) no-repeat;background-size:100%;width: 6rem;height:6rem;margin: 0 auto 0.5rem auto;position: relative;}
+.center_top{background: url(../img/guzhong.png) no-repeat;background-size:80% 80%;position: absolute;top: 0;left:55%;margin-left:-100px;width: 205px;height: 230px;z-index: 900;}
+.center_bottom p{font-size: 0.16rem;}
+.center_bottom{width: 100px;height: 100px;position: absolute;top: 190px;left: 50%;margin-left: -50px;position: relative;}
+.dice{width:50px; height:50px; background:url(../img/dice.png) no-repeat;background-size:100%;}
+.dice_1{background-position:0 -4px} 
+.dice_2{background-position:0 -54px} 
+.dice_3{background-position:0 -107px} 
+.dice_4{background-position:0 -158px} 
+.dice_5{background-position:0 -214px} 
+.dice_6{background-position:0 -269px} 
+.dice_t{background-position:0 -325px} 
+.dice_s{background-position:0 -382px} 
+.dice_e{background-position:0 -436px} 
+.warp1,.warp2,.warp3{width: 50px;height: 50px;}
+.warp1{position: absolute;top: 0px;left: 23px;}
+.warp2{position: absolute;top: 50px;left: 0;}
+.warp3{position: absolute;top: 50px;right: 0;}
+.bottom{overflow: hidden;margin-bottom: 10px;}
+.bottom .big{width: 60px;height: 60px;background:#ff9e29;border-radius: 50px;font-size: 24px; border: none;float: left;margin-left: 15px;}
+.bottom .small{width: 60px;height: 60px;background:#ff9e29;border-radius: 50px;font-size: 24px;border: none;float: right;margin-right: 15px;}
+.footer{height: 60px;margin-bottom: 10px;padding-left: 15px;}
+.footer h3{font-size: 0.42rem;color: #ffc728;}
+.footer p{font-size: 0.24rem;color: #FF3300;}
+.hide{display: none;}
+.bet{width: 5.5rem;height: 3.6rem;background: url(../img/bet_bg.png) repeat-x;position: fixed;top: 50%;z-index: 998;left: 0;right: 0;margin: -1.8rem auto 0 auto;border-radius: 10px;}
+.bet_top{height: 0.7rem;line-height: 0.7rem;text-align: center;}
+.bet_center{height: 0.8rem;line-height: 0.8rem;width: 3rem;margin: 0 auto;}
+.remove,.add{width: 0.75rem;height: 0.75rem;background: #1c1d1f;border: none;color: #fff;font-size: 20px;border-radius: 5px;}
+.bet_center .num{width: 0.75rem;height: 0.75rem;font-size: 20px;text-align: center;line-height: 0.75rem;margin: 0 10px;border-radius: 5px;}
+.bet p{letter-spacing: 2;margin: 10px 10px 5px :;;height: 1rem;line-height: 1rem;text-align: center;}
+.bet .start{width: 1.3rem;height: 0.6rem;color: #fff;font-size: 20px;line-height: 0.6rem;text-align: center;background: #1490c4;border: none;border-radius: 5px;margin: 0 auto;display: block;}
+.tishi{text-align: center; width: 5.5rem;height: 3.6rem;line-height:2.5rem;background: url(../img/bet_bg.png) repeat-x;position: fixed;top: 50%;z-index: 999;left: 0;right: 0;margin: -1.8rem auto 0 auto;border-radius: 10px;color: #000;font-size: 20px;}
+.tishi .close{width: 1.3rem;height: 0.6rem;color: #fff;font-size: 20px;text-align: center;background: #1490c4;border: none;border-radius: 5px;margin: 0 auto;display: block;margin-bottom: 10px;}
+.win{text-align: center; width: 5.5rem;height: 3.6rem;line-height:2.5rem;background: url(../img/bet_bg.png) repeat-x;position: fixed;top: 50%;z-index: 999;left: 0;right: 0;margin: -1.8rem auto 0 auto;border-radius: 10px;color: #000;font-size: 20px;}
+.win .close{width: 1.3rem;height: 0.6rem;color: #fff;font-size: 20px;text-align: center;background: #1490c4;border: none;border-radius: 5px;margin: 0 auto;display: block;margin-bottom: 10px;}
+
+.win_box{text-align: center; width: 5.5rem;height: 3.6rem;line-height:2.5rem;background: url(../img/bet_bg.png) repeat-x;position: fixed;top: 50%;z-index: 999;left: 0;right: 0;margin: -1.8rem auto 0 auto;border-radius: 10px;color: #000;font-size: 20px;}
+.win_box .close{width: 1.3rem;height: 0.6rem;color: #fff;font-size: 20px;text-align: center;background: #1490c4;border: none;border-radius: 5px;margin: 0 auto;display: block;margin-bottom: 10px;}

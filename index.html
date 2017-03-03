@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/font-model.css"/>
+	<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/phone-model.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/add.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/getdata.js" type="text/javascript" charset="utf-8"></script>-->
+    <title></title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+			<div class="header">
+				<div class="left_img">
+					<img src="img/left_icon.jpg"/>
+					<p>名字1</p>
+				</div>
+				<div class="right_img">
+					<img src="img/right_icon.jpg"/>
+					<p>名字2</p>
+				</div>
+			</div>
+			<div class="center">
+				<div class="center_top">
+					
+				</div>
+				<div class="center_bottom">
+					<div class="warp1">
+						<div id="dice" class="dice dice_1"></div> 
+					</div>
+					<div class="warp2">
+						<div id="dice1" class="dice dice_1"></div> 
+					</div>
+					<div class="warp3">
+						<div id="dice2" class="dice dice_1"></div> 
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				
+			</div>
+			<div class="footer">
+				
+			</div>
+			<div class="bet">
+				<div class="bet_top">金币投注数(0~100)</div>
+				<div class="bet_center">
+					<button class="remove">-</button>
+					<input type="number" class="num" value="10" max="100" min="1" readonly="readonly"/>
+					<button class="add">+</button>
+				</div>
+				<p>规则:&nbsp;每注<span class="span_num">10</span>金币，点数总和最大的通吃。</p>
+				<button class="start">开摇</button>
+			</div>
+			<div class="tishi hide">
+				请您摇动手机！
+				<button class="close">确认</button>
+			</div>
+			<div class="win hide">
+				获得的点数是:<span id="totalnum"></span>
+				<button class="close">确认</button>
+			</div>
+			<div class="win_box hide">
+				<span id="win_tipcon"></span>
+				<button class="close">确认</button>
+			</div>
+	</div>
+</body>
+</html>
