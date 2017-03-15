@@ -1,3 +1,6 @@
+var suiji_arr=[
+	[2,3,1],[6,6,6]
+]
 $(function(){
 	var oRemove = $(".remove");
 	var oAdd = $(".add");
@@ -10,10 +13,6 @@ $(function(){
     var num2 = 0;
     var dice1 = $("#dice1");
     var dice2 = $("#dice2");
-    var suiji_arr=[
-  		[2,3,1],
-  		[6,6,6]
-  	];//从后台获取的数据
     var ARR=[];
 	function yaoFun() {
         $(".center_top").animate({top: "+130px"}, 200, function () {
@@ -34,8 +33,8 @@ $(function(){
         	num2 =suiji_arr[0][2];
         }else if(ARR.length==1){
         	num = suiji_arr[1][0];
-        	num1 =suiji_arr[1][1];
-        	num2 =suiji_arr[1][2];
+        	num1=suiji_arr[1][1];
+        	num2=suiji_arr[1][2];
         }
         
         //第一个色子
@@ -83,8 +82,6 @@ $(function(){
 				    			$('.tishi').addClass("hide");
 								//yaoFun();
 								kaiyao.addEven();
-
-
 				    		});
 				    	},500);
 				    })
@@ -95,16 +92,19 @@ $(function(){
 							kaiyao.removeEven();
 					    	$('.win_box').removeClass("hide");
 					    	if(ARR[0]-ARR[1]>0){
-					    		$("#win_tipcon").html("第一位赢啦");
+					    		$("#win_tipcon").html("第一位赢啦,是否继续");
 					    	}else if(ARR[0]-ARR[1]==0){
-					    		$("#win_tipcon").html("平局");
+					    		$("#win_tipcon").html("平局，是否继续");
 					    	}else{
-					    		$("#win_tipcon").html("第二位赢啦");
+					    		$("#win_tipcon").html("第二位赢啦，是否继续");
 					    	}
 					    	$(".win_box .close").click(function(){
 					    		$('.win_box').addClass("hide");
 					    		location.reload();
 					    	});
+							$(".win_box .no").click(function(){
+								$('.win_box').addClass("hide");
+							});
 					    },500);
 				    })
 				}
@@ -188,8 +188,6 @@ $(function(){
     oStart.click(function(){
     	$('.bet').addClass("hide");
     	yaoFun();
-	    
-	    	//$('.win').removeClass('hide');
    	});
     	
 });
